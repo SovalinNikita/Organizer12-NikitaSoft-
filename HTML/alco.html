@@ -1,0 +1,205 @@
+<html>
+
+<script src="alco.js"></script>
+
+<head> 
+	<title>NikitaSoft Calculator</title>
+</head> 
+<body>
+
+<table id="maintable" class="first">
+	<tr height="4%">
+		<td class="pagetd" colspan="4" width="100%">
+			
+			<table height="100%" width="100%">
+				<tr height="100%" width="100%">
+
+					<td height="100%" width="23%">
+						<button class="menubutton" onclick="window.location.href = 'index.html';">menu</button>
+					</td>
+
+					<td height="100%" width="33%">
+					</td>
+
+					<td height="100%" width="43%">
+						<input class="pagename" readonly value="alco">
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<table height="100%" width="100%">
+				<tr>
+					<td width="50%">
+						<input onclick="genderchange(0.7)" type="radio" name="alcoradio" id="man">
+						<label onclick="genderchange(0.7)" class="sys_radio" for="man">Male</label>
+					</td>
+					<td width="50%">
+						<input onclick="genderchange(0.6)" type="radio" name="alcoradio" id="woman">
+						<label onclick="genderchange(0.6)" class="sys_radio" for="woman">Female</label>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+		<td width="46%">
+			<input class="alco_text2" readonly value="weight:">
+		</td>
+		<td>
+			<select id="alcoselect" onchange="masschange(this.value)" widht="100%" class="task_select">
+				<option value="40">20-40</option>
+				<option value="50">40-50</option>
+				<option value="60">50-60</option>
+				<option value="70">60-70</option>
+				<option value="80">70-80</option>
+				<option value="90">80-90</option>
+				<option value="100">90-100</option>
+				<option value="110">100-110</option>
+				<option value="120">110-120</option>
+				<option value="130">120-130</option>
+				<option value="150">130+</option>
+			</select>
+		</td>
+		<td width="25%">
+			<input class="percent" readonly value="KG">
+		</td>
+	<tr>
+		<td width="35%">
+			<input class="alco_text2" readonly value="Drink 4-7%:">
+		</td>
+		<td>
+			<input class="noteinput2" id="percent2" value="0" readonly>
+		</td>
+		<td>
+			<input class="percent" value="ml" readonly>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="3">
+			<input type="range" onchange="percent1_2(this.value)" class="alco_range" min="0" max="5000" step="50" value="0">
+		</td>
+	</tr>
+
+	<tr>
+		<td width="35%">
+			<input class="alco_text2" readonly value="Drink 10-14%:">
+		</td>
+		<td>
+			<input class="noteinput2" id="percent14" value="0" readonly>
+		</td>
+		<td>
+			<input class="percent" value="ml" readonly>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="3">
+			<input type="range" onchange="percent10_14(this.value)" class="alco_range" min="0" max="2000" step="50" value="0">
+		</td>
+	</tr>
+
+	<tr>
+		<td width="35%">
+			<input class="alco_text2" readonly value="Drink 20-25%:">
+		</td>
+		<td>
+			<input class="noteinput2" id="percent25" value="0" readonly>
+		</td>
+		<td>
+			<input class="percent" value="ml" readonly>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="3">
+			<input type="range" onchange="percent20_25(this.value)" class="alco_range" min="0" max="1000" step="50" value="0">
+		</td>
+	</tr>
+
+	<tr>
+		<td width="35%">
+			<input class="alco_text2" readonly value="Drink 25-45%:">
+		</td>
+		<td>
+			<input class="noteinput2" id="percent45" value="0" readonly>
+		</td>
+		<td>
+			<input class="percent" value="ml" readonly>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="3">
+			<input type="range" onchange="percent25_45(this.value)" class="alco_range" min="0" max="500" step="50" value="0">
+		</td>
+	</tr>
+
+	<tr>
+		<td width="35%">
+			<input class="alco_text2" readonly value="Hours:">
+		</td>
+		<td>
+			<input class="noteinput2"  id="hours" value="0" readonly>
+		</td>
+		<td>
+			<input class="percent" value="h" readonly>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="3">
+			<input type="range" onchange="alcohours(this.value)" class="alco_range" min="0" max="48" step="1" value="0">
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="3">
+			<table width=100%" height=100%">
+				<tr>
+					<td width="40%">
+						<input class="noteinput2" id="res" readonly>
+					</td>
+
+					<td>
+						<input class="percent" value="&#8240;" readonly>
+					</td>
+
+					<td width="40%">
+						<input class="noteinput2" id="res_hours" readonly>
+					</td>
+
+					<td>
+						<input class="percent" value="h" readonly>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr height="8%">
+		<td colspan="4">
+
+			<table class="second" border="1">
+				<tr>
+					<td>
+						<iframe frameborder="0" height="100%" width="100%" src="BB.html"></iframe>
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+
+</body>
+
+<script>
+alcoselect.selectedIndex = 4;
+man.checked = true;
+</script>
+
+</html>

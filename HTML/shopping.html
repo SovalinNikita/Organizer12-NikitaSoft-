@@ -1,0 +1,193 @@
+<html>
+<head> 
+<title>NikitaSoft Calculator</title>
+</head>
+<body>
+<table id="maintable" class="first">
+	<tr height="4%">
+		<td class="pagetd" colspan="4" width="100%">
+			
+			<table height="100%" width="100%">
+				<tr height="100%" width="100%">
+
+					<td height="100%" width="23%">
+						<button class="menubutton" onclick="window.location.href = 'index.html';">menu</button>
+					</td>
+
+					<td height="100%" width="27%">
+						<table>
+							<tr>
+								<td height="50%">
+									<input class="shopnameone21" value="planned sum" readonly>
+								</td>
+							</tr>
+							<tr>
+								<td height="50%">
+									<input class="shopnamethree" id="planned" readonly>
+								</td>
+							</tr>
+
+						</table>
+					</td>
+
+					<td height="100%" width="27%">
+						<table>
+							<tr>
+								<td height="50%">
+									<input class="shopnameone21" value="real sum" readonly>
+								</td>
+							</tr>
+							<tr>
+								<td height="50%">
+									<input class="shopnamefour" id="real" readonly>
+								</td>
+							</tr>
+
+						</table>
+					</td>
+
+					<td height="100%" width="23%">
+						<button class="clearall" onclick="shop_clearall()">CLEAR ALL</button>
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%" height="100%">
+				<tr>
+					<td width="10%"></td>
+					<td width="50%" colspan="2"><input class="shopnameone2" value="name" readonly></td>
+					<td width="13%"><input class="shopnameone2" value="bought" readonly></td>
+					<td width="17%"><input class="shopnameone2" value="amount" readonly></td>
+					<td width="10%"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr width="100%">
+		<td width="100%">
+			<table width="100%" height="100%">
+				<tr>
+					<td width="10%"><button onclick="shop_clear(1)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td width="50%" colspan="2"><input onclick="shop_change(1)" class="noteinput" id="shoptext01" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" onclick="chbx_change1()" id="shopchbx1"></td>
+					<td width="20%"><input class="shopnameone" id="plannedamount1" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(1)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(2)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(2)" class="noteinput" id="shoptext02" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx2" onclick="chbx_change2()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount2" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(2)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(3)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(3)" class="noteinput" id="shoptext03" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx3" onclick="chbx_change3()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount3" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(3)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(4)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(4)" class="noteinput" id="shoptext04" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx4" onclick="chbx_change4()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount4" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(4)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(5)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(5)" class="noteinput" id="shoptext05" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx5" onclick="chbx_change5()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount5" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(5)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(6)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(6)" class="noteinput" id="shoptext06" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx6" onclick="chbx_change6()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount6" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(6)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(7)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(7)" class="noteinput" id="shoptext07" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx7" onclick="chbx_change7()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount7" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(7)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(8)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(8)" class="noteinput" id="shoptext08" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx8" onclick="chbx_change8()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount8" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(8)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(9)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(9)" class="noteinput" id="shoptext09" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx9" onclick="chbx_change9()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount9" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(9)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(10)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(10)" class="noteinput" id="shoptext10" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx10" onclick="chbx_change10()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount10" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(10)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(11)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(11)" class="noteinput" id="shoptext11" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx11" onclick="chbx_change11()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount11" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(11)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td width="10%"><button onclick="shop_clear(12)"><img src="mb3.png" height="100%" width="100%"></button></td>
+					<td colspan="2"><input onclick="shop_change(12)" class="noteinput" id="shoptext12" readonly></td>
+					<td width="10%"><input width="100%" height="100%" type="checkbox" class="chbx" id="shopchbx12" onclick="chbx_change12()"></td>
+					<td width="10%"><input class="shopnameone" id="plannedamount12" value="000.0" readonly></td>
+					<td width="10%"><button><img onclick="shop_change(12)" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr height="8%">
+					<td colspan="6">
+
+						<table class="second" border="1">
+							<tr>
+								<td>
+									<iframe frameborder="0" height="100%" width="100%" src="BB.html"></iframe>
+								</td>
+							</tr>
+						</table>
+
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table id="arrtab" width="100%" height="100%">
+				<tr>
+					<td colspan="4">
+					</td>
+				</tr>
+			</table id="arrtab">
+		</td>
+	</tr>
+</table>
+</body>
+<script src="shopcode1.js"></script>
+</html>
+
+
+
+
+
+

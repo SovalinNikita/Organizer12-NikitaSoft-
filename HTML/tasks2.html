@@ -1,0 +1,284 @@
+<html>
+<script src="taskscode.js"></script>
+<head> 
+<title>NikitaSoft Calculator</title>
+</head>
+<body>
+<table id="maintable" class="first" background-color="#d5d5d5">
+	<tr width="100%">
+		<td width="100%">
+			<table width="100%" height="100%">
+			<tr height="8%">
+				<td colspan="2"><input class="noteinput2" id="taskname"></td>
+			</tr>
+			<tr heigth="3%">
+				<td></td>
+			</tr>
+			<tr height="51%">
+				<td><textarea class="noteinput3" id="tasktext"></textarea></td>
+			</tr>
+			<tr height="31%">
+				<td>
+					<table width="100%" height="100%">
+						<tr>	
+							<td colspan="3">	
+								<table width="100%" height="100%">				
+									<tr>
+										<td width="30%">
+											<input class="taskname7" value="importance" readonly="">
+										</td>
+										<td width="70%">
+											<select class="task_select" onclick="task_select1()" id="taskselect1">
+												<option style="background-color:white" value="vw">not important</option> 
+												<option style="background-color:red" value="vi">very important</option> 
+												<option style="background-color:yellow" value="i">important</option> 
+												<option style="background-color:green" value="nsi">not so important</option> 
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="1">
+											<input class="taskname7" value="status" readonly="">
+										</td>
+										<td colspan="2">
+											<select class="task_select" onclick="task_select2()" id="taskselect2">
+												<option style="background-color:white" value="dns">did not start</option> 
+												<option style="background-color:green" value="d">done</option> 
+												<option style="background-color:red" value="p">problem</option> 
+												<option style="background-color:yellow" value="ip">in progress</option> 
+											</select>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<input class="taskname2" value="date & time" readonly="">
+							</td>
+						</tr>
+
+						<tr height="18%">
+							<td width="50%"><input type="date" id="date" class="noteinput2"></td>
+							<td width="25%"><input id="weekday" class="noteinput2"></td>
+							<td width="25%"><input type="time" id="time" class="noteinput2"></td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+			<tr height="8%">
+				<td height="100%" width="100%">
+					<table height="100%" width="100%">
+						<tr height="100%">
+							<td height="100%" width="35%"><button onclick="task_delete()" class="clearall">CLEAR ALL</button></td>
+							<td height="100%" width="30%"></td>
+							<td height="100%" width="35%"><button class="calc" background-color="#d5d5d5" onclick="task_change2()" height="100%" width="100%">OK</button></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</td>
+	</tr>
+</table>
+</body>
+<script>
+
+setInterval( task_select1, 1 );
+setInterval( task_select2, 1 );
+setInterval( datechange, 1 );
+var tch = localStorage.getItem('taskchange');
+	switch (tch)
+		{
+		case "1":
+		localStorage.setItem('taskname', localStorage.getItem('task0101'));
+		localStorage.setItem('tasktext', localStorage.getItem('task0102'));
+		localStorage.setItem('importance', localStorage.getItem('task0103'));
+		localStorage.setItem('status', localStorage.getItem('task0104'));
+		localStorage.setItem('date', localStorage.getItem('task0105'));
+		localStorage.setItem('weekday', localStorage.getItem('task0106'));
+		localStorage.setItem('time', localStorage.getItem('task0107'));
+		break;
+
+		case "2":
+		localStorage.setItem('taskname', localStorage.getItem('task0201'));
+		localStorage.setItem('tasktext', localStorage.getItem('task0202'));
+		localStorage.setItem('importance', localStorage.getItem('task0203'));
+		localStorage.setItem('status', localStorage.getItem('task0204'));
+		localStorage.setItem('date', localStorage.getItem('task0205'));
+		localStorage.setItem('weekday', localStorage.getItem('task0206'));
+		localStorage.setItem('time', localStorage.getItem('task0207'));
+		break;
+
+		case "3":
+		localStorage.setItem('taskname', localStorage.getItem('task0301'));
+		localStorage.setItem('tasktext', localStorage.getItem('task0302'));
+		localStorage.setItem('importance', localStorage.getItem('task0303'));
+		localStorage.setItem('status', localStorage.getItem('task0304'));
+		localStorage.setItem('date', localStorage.getItem('task0305'));
+		localStorage.setItem('weekday', localStorage.getItem('task0306'));
+		localStorage.setItem('time', localStorage.getItem('task0307'));
+		break;
+
+		case "4":
+		localStorage.setItem('taskname', localStorage.getItem('task0401'));
+		localStorage.setItem('tasktext', localStorage.getItem('task0402'));
+		localStorage.setItem('importance', localStorage.getItem('task0403'));
+		localStorage.setItem('status', localStorage.getItem('task0104'));
+		localStorage.setItem('date', localStorage.getItem('task0405'));
+		localStorage.setItem('weekday', localStorage.getItem('task0406'));
+		localStorage.setItem('time', localStorage.getItem('task0407'));
+		break;
+
+		case "5":
+		localStorage.setItem('taskname', localStorage.getItem('task0501'));
+		localStorage.setItem('tasktext', localStorage.getItem('task0502'));
+		localStorage.setItem('importance', localStorage.getItem('task0503'));
+		localStorage.setItem('status', localStorage.getItem('task0504'));
+		localStorage.setItem('date', localStorage.getItem('task0505'));
+		localStorage.setItem('weekday', localStorage.getItem('task0506'));
+		localStorage.setItem('time', localStorage.getItem('task0507'));
+		break;
+
+		case "6":
+		localStorage.setItem('taskname', localStorage.getItem('task0601'));
+		localStorage.setItem('tasktext', localStorage.getItem('task0602'));
+		localStorage.setItem('importance', localStorage.getItem('task0603'));
+		localStorage.setItem('status', localStorage.getItem('task0604'));
+		localStorage.setItem('date', localStorage.getItem('task0605'));
+		localStorage.setItem('weekday', localStorage.getItem('task0606'));
+		localStorage.setItem('time', localStorage.getItem('task0607'));
+		break;
+
+		case "7":
+		localStorage.setItem('taskname', localStorage.getItem('task0701'));
+		localStorage.setItem('tasktext', localStorage.getItem('task0702'));
+		localStorage.setItem('importance', localStorage.getItem('task0703'));
+		localStorage.setItem('status', localStorage.getItem('task0704'));
+		localStorage.setItem('date', localStorage.getItem('task0705'));
+		localStorage.setItem('weekday', localStorage.getItem('task0706'));
+		localStorage.setItem('time', localStorage.getItem('task0707'));
+		break;
+
+		case "8":
+		localStorage.setItem('taskname', localStorage.getItem('task0801'));
+		localStorage.setItem('tasktext', localStorage.getItem('task0802'));
+		localStorage.setItem('importance', localStorage.getItem('task0803'));
+		localStorage.setItem('status', localStorage.getItem('task0804'));
+		localStorage.setItem('date', localStorage.getItem('task0805'));
+		localStorage.setItem('weekday', localStorage.getItem('task0806'));
+		localStorage.setItem('time', localStorage.getItem('task0807'));
+		break;
+
+		case "9":
+		localStorage.setItem('taskname', localStorage.getItem('task0901'));
+		localStorage.setItem('tasktext', localStorage.getItem('task0902'));
+		localStorage.setItem('importance', localStorage.getItem('task0903'));
+		localStorage.setItem('status', localStorage.getItem('task0904'));
+		localStorage.setItem('date', localStorage.getItem('task0905'));
+		localStorage.setItem('weekday', localStorage.getItem('task0906'));
+		localStorage.setItem('time', localStorage.getItem('task0907'));
+		break;
+
+		case "10":
+		localStorage.setItem('taskname', localStorage.getItem('task1001'));
+		localStorage.setItem('tasktext', localStorage.getItem('task1002'));
+		localStorage.setItem('importance', localStorage.getItem('task1003'));
+		localStorage.setItem('status', localStorage.getItem('task1004'));
+		localStorage.setItem('date', localStorage.getItem('task1005'));
+		localStorage.setItem('weekday', localStorage.getItem('task1006'));
+		localStorage.setItem('time', localStorage.getItem('task1007'));
+		break;
+
+		case "11":
+		localStorage.setItem('taskname', localStorage.getItem('task1101'));
+		localStorage.setItem('tasktext', localStorage.getItem('task1102'));
+		localStorage.setItem('importance', localStorage.getItem('task1103'));
+		localStorage.setItem('status', localStorage.getItem('task1104'));
+		localStorage.setItem('date', localStorage.getItem('task1105'));
+		localStorage.setItem('weekday', localStorage.getItem('task1106'));
+		localStorage.setItem('time', localStorage.getItem('task1107'));
+		break;
+
+		case "12":
+		localStorage.setItem('taskname', localStorage.getItem('task1201'));
+		localStorage.setItem('tasktext', localStorage.getItem('task1202'));
+		localStorage.setItem('importance', localStorage.getItem('task1203'));
+		localStorage.setItem('status', localStorage.getItem('task1204'));
+		localStorage.setItem('date', localStorage.getItem('task1205'));
+		localStorage.setItem('weekday', localStorage.getItem('task1206'));
+		localStorage.setItem('time', localStorage.getItem('task1207'));
+		break;
+		}
+	taskname.value = localStorage.getItem('taskname');
+	tasktext.value = localStorage.getItem('tasktext');
+
+if (taskname.value == "null")
+	{
+	taskname.value = "";
+	}
+if (tasktext.value == "null")
+	{
+	tasktext.value = "";
+	}
+
+	if (localStorage.getItem('importance') == 0)
+		{
+		document.getElementById("taskselect1").selectedIndex = 0;
+		}
+	else if (localStorage.getItem('importance') == 1)
+		{
+		document.getElementById("taskselect1").selectedIndex = 1;
+		}
+	else if (localStorage.getItem('importance') == 2)
+		{
+		document.getElementById("taskselect1").selectedIndex = 2;
+		}
+	else if (localStorage.getItem('importance') == 3)
+		{
+		document.getElementById("taskselect1").selectedIndex = 3;
+		}
+	
+	if (localStorage.getItem('status') == 0)
+		{
+		document.getElementById("taskselect2").selectedIndex = 0;
+		}
+	else if (localStorage.getItem('status') == 1)
+		{
+		document.getElementById("taskselect2").selectedIndex = 1;
+		}
+	else if (localStorage.getItem('status') == 2)
+		{
+		document.getElementById("taskselect2").selectedIndex = 2;
+		}
+	else if (localStorage.getItem('status') == 3)
+		{
+		document.getElementById("taskselect2").selectedIndex = 3;
+		}
+	date.value = localStorage.getItem('date');
+	weekday.value = localStorage.getItem('weekday');
+	time.value = localStorage.getItem('time');
+if (weekday.value == "null")
+	{
+	weekday.value = "";
+	}
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

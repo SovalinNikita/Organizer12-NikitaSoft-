@@ -1,0 +1,98 @@
+<html>
+<script src="notepadcode.js"></script>
+<head>
+<title>NikitaSoft Calculator</title>
+</head>
+<body>
+<table id="maintable" class="first" background-color="#d5d5d5">
+<tr width="100%">
+<td width="100%">
+<table width="100%" height="100%">
+<tr height="8%">
+<td colspan="2"><input class="noteinput2" id="notename" value="first note"></td>
+</tr>
+<tr heigth="3%">
+<td></td>
+</tr>
+<tr height="82%">
+<td><textarea class="noteinput3" id="notetext"></textarea></td>
+</tr>
+<tr height="8%">
+<td height="100%" width="100%">
+<table height="100%" width="100%">
+<tr height="100%">
+<td height="100%" width="35%"><button onclick="note_clearall()" class="clearall">CLEAR ALL</button></td>
+<td height="100%" width="30%"></td>
+<td height="100%" width="35%"><button class="calc" background-color="#d5d5d5" onclick="notesave()" height="100%" width="100%">OK</button></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script>
+var tnn = localStorage.getItem('noteswitch');
+	switch (tnn)
+	{
+	case "1":
+	notename.value = localStorage.getItem('note0101');
+	notetext.value = localStorage.getItem('note0102');
+	break;
+
+	case "2":
+	notename.value = localStorage.getItem('note0201');
+	notetext.value = localStorage.getItem('note0202');
+	break;
+
+	case "3":
+	notename.value = localStorage.getItem('note0301');
+	notetext.value = localStorage.getItem('note0302');
+	break;
+
+	case "4":
+	notename.value = localStorage.getItem('note0401');
+	notetext.value = localStorage.getItem('note0402');
+	break;
+
+	case "5":
+	notename.value = localStorage.getItem('note0501');
+	notetext.value = localStorage.getItem('note0502');
+	break;
+
+	case "6":
+	notename.value = localStorage.getItem('note0601');
+	notetext.value = localStorage.getItem('note0602');
+	break;
+
+	case "7":
+	notename.value = localStorage.getItem('note0701');
+	notetext.value = localStorage.getItem('note0702');
+	break;
+
+	case "8":
+	notename.value = localStorage.getItem('note0801');
+	notetext.value = localStorage.getItem('note0802');
+	break;
+
+	case "9":
+	notename.value = localStorage.getItem('note0901');
+	notetext.value = localStorage.getItem('note0902');
+	break;
+
+	case "10":
+	notename.value = localStorage.getItem('note1001');
+	notetext.value = localStorage.getItem('note1002');
+	break;
+
+	case "11":
+	notename.value = localStorage.getItem('note1101');
+	notetext.value = localStorage.getItem('note1102');
+	break;
+
+	case "12":
+	notename.value = localStorage.getItem('note1201');
+	notetext.value = localStorage.getItem('note1202');
+	break;
+	}
+</script>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+   <title>Cat test</title>
+   <meta charset="UTF-8" />
+<style>
+div {  /* same options for all divs */
+ font: bold LUCIDA CONSOLE;
+ border: hidden;
+ background: white;
+ width: 100%;
+ height: 100%;
+ color: black;
+ touch-action: none;
+}
+div.memory {
+  display: grid;
+  grid-template-columns: 17% 58% 25%;
+  grid-template-rows: 33% 33% 33%;
+  height: 14%;
+}
+div.memorybuttons {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-row: span 3;
+}
+button { /* same options for all buttons */
+  width: 95%;
+  height: 95%;
+  border-radius: 10%;
+  border: 1px solid #aaaaaa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font: bold LUCIDA CONSOLE;
+  font-weight: bold;
+  font-size: 4em;
+  color: black;
+}
+button.memorybutton {
+background-color: white;
+align-self:center;
+}
+input { /* same option for all inputs */
+  font: bold LUCIDA CONSOLE;
+  width: 100%;
+  height: 100%;
+  font-size: max(1em, min(3.4em, calc(100vw * 4 / 75)));
+}
+input.memorytext{
+background: white;
+text-align: center;
+border: hidden;
+}
+input.memoryinput{
+  height: 94%;
+  width: 98%;
+background: #d5f4d9;
+text-align: left;
+border-radius: 5px;
+border: 1px solid #aaaaaa;
+}
+</style>
+</head>
+ <body>
+   			<div id="root"></div>
+   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+   <script src="https://unpkg.com/@babel/standalone@7.13.6/babel.min.js" crossorigin></script>
+   <script type="text/babel">
+     function Kot() {
+       return (
+         <React.Fragment>
+         <div className="memory">
+       		<div><input className="memorytext" value="M1" /></div>
+       		<div><input className="memoryinput" id="firstmemory" /></div>
+       		<div className="memorybuttons">
+       			<div><button className="memorybutton"><img src="mb1.png" height="100%" width="100%" /></button></div>
+       			<div><button className="memorybutton"><img src="mb2.png" height="100%" width="100%" /></button></div>
+       			<div><button className="memorybutton"><img src="mb3.png" height="100%" width="100%" /></button></div>
+
+       			<div><button className="memorybutton"><img src="mb1.png" height="100%" width="100%" /></button></div>
+       			<div><button className="memorybutton"><img src="mb2.png" height="100%" width="100%" /></button></div>
+       			<div><button className="memorybutton"><img src="mb3.png" height="100%" width="100%" /></button></div>
+
+       			<div><button className="memorybutton"><img src="mb1.png" height="100%" width="100%" /></button></div>
+       			<div><button className="memorybutton"><img src="mb2.png" height="100%" width="100%" /></button></div>
+       			<div><button className="memorybutton"><img src="mb3.png" height="100%" width="100%" /></button></div>
+       		</div>
+          <div><input className="memorytext" value="M2" /></div>
+       		<div><input className="memoryinput" id="firstmemory" /></div>
+          <div><input className="memorytext" value="M3" /></div>
+       		<div><input className="memoryinput" id="firstmemory" /></div>
+         </div>
+         </React.Fragment>
+       );
+     }
+     ReactDOM.render(
+       <div><Kot /></div>,
+       document.getElementById("root")
+     );
+   </script>
+ </body>
+</html>

@@ -1,0 +1,174 @@
+<html>
+<script src="creditcode.js">
+firstmemory.value = localStorage.getItem('firstmemory');
+secondmemory.value = localStorage.getItem('secondmemory');
+thirdmemory.value = localStorage.getItem('thirdmemory');
+</script>
+<head> 
+<title>NikitaSoft Calculator</title>
+</head>
+<body>
+<table id="maintable" class="first">
+	<tr height="4%">
+		<td class="pagetd" colspan="4" width="100%">
+			
+			<table height="100%" width="100%">
+				<tr height="100%" width="100%">
+
+					<td height="100%" width="23%">
+						<button class="menubutton"  onclick="window.location.href = 'index.html';">menu</button>
+					</td>
+
+					<td height="100%" width="33%">
+					</td>
+
+					<td height="100%" width="43%">
+						<input class="pagename" readonly value="credit calculator">
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="4" width="100%" height="25%">
+			<table class="second" border="1">
+				<tr>
+					<td width="34%"><input class="name" readonly value="SUM"></td>
+					<td><input width="56%" class="grtwo" id="credittext1" readonly value="0"></td>
+					<td width="10%"><button id="onepencil" onclick="creditone()"><img src="cb 1.png" height="100%" width="100%" id="onepic"></button></td>
+				</tr>
+				<tr>
+					<td><input class="name" readonly value="%"></td>
+					<td><input width="56%" class="grtwo" id="credittext2" readonly value="0"></td>
+					<td width="10%"><button id="twopencil" onclick="credittwo()"><img src="cb 1.png" height="100%" width="100%" id="twopic"></button></td>
+				</tr>
+				<tr>
+					<td><input class="name" readonly value="FIRST PAY(%)"></td>
+					<td><input class="grtwo" id="credittext3" value="0" readonly></td>
+					<td width="10%"><button id="threepencil" onclick="creditthree()"><img src="cb 1.png" height="100%" width="100%" id="threepic"></button></td>
+				</tr>
+				<tr>
+					<td><input class="name" readonly value="N(month)"></td>
+					<td><input class="grtwo" id="credittext4" value="0" readonly></td>
+					<td width="10%"><button id="fourpencil" onclick="creditfour()"><img src="cb 1.png" height="100%" width="100%" id="fourpic" onclick="creditfour()"></button></td>
+				</tr>
+				<tr>
+					<td><input class="name" value="PAYMENT" readonly></td>
+					<td><input class="grtwo" id="credittext5" value="0" readonly></td>
+					<td width="10%"><button onclick="creditfive()"><img src="cb 3.png" height="100%" width="100%" id="fivepic"></button></td>
+				</tr>
+				<tr>
+					<td><input class="name" value="OVERPAYMENT" readonly></td>
+					<td><input class="grtwo" id="credittext6" value="0" readonly></td>
+					<td width="10%"><button onclick="creditsix()"><img src="cb 3.png" height="100%" width="100%" id="sixpic"></button></td>
+				</tr>
+				<tr>
+					<td><input class="name" value="FIRST PAYMENT" readonly></td>
+					<td><input class="grtwo" id="credittext7" value="0" readonly></td>
+					<td width="10%"><button onclick="creditseven()"><img src="cb 3.png" height="100%" width="100%" id="sevenpic"></button></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr height="1%">
+		<td colspan="3" width="70%">
+			<table class="second">
+				<tr height="100%">
+					<td width="15%"><input class="bltwo" value="M1" readonly></td>
+					<td width="85%"><input class="bl" id="firstmemory" readonly></td>
+				</tr>
+			</table>
+		</td>
+		<td width="30%">
+			<table class="second" border="1">
+				<tr>
+					<td><button><img src="mb1.png" height="100%" width="100%" onclick="credit0101memorybutton()"></button></td>
+					<td><button  id="m1"><img src="mb2.png" height="100%" width="100%" onclick="credit0201memorybutton()"></button></td>
+					<td><button><img src="mb3.png" height="100%" width="100%" onclick="credit0301memorybutton()"></button></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr height="1%">
+		<td colspan="3" width="80%">
+			<table class="second">
+				<tr height="100%">
+					<td width="15%"><input class="bltwo" value="M2" readonly></td>
+					<td width="85%"><input class="bl" id="secondmemory" readonly></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table class="second" border="1">
+				<tr>
+					<td><button><img src="mb1.png" height="100%" width="100%" onclick="credit0102memorybutton()"></button></td>
+					<td><button id="m2"><img src="mb2.png" height="100%" width="100%" onclick="credit0202memorybutton()"></button></td>
+					<td><button><img src="mb3.png" height="100%" width="100%" onclick="credit0302memorybutton()"></button></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr height="1%">
+		<td colspan="3" width="80%">
+			<table class="second">
+				<tr height="100%">
+					<td width="15%"><input class="bltwo" value="M3" readonly></td>
+					<td width="85%"><input class="bl" id="thirdmemory" readonly></td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table class="second" border="1">
+				<tr>
+					<td><button><img src="mb1.png" height="100%" width="100%" onclick="credit0103memorybutton()"></button></td>
+					<td><button id="m3"><img src="mb2.png" height="100%" width="100%" onclick="credit0203memorybutton()"></button></td>
+					<td><button><img src="mb3.png" height="100%" width="100%" onclick="credit0303memorybutton()"></button></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td width="25%" height="6%"><button id="w7" onclick="creditwritescript('7')">7</td>
+		<td width="25%"><button id="w8" onclick="creditwritescript('8')">8</td>
+		<td width="25%"><button id="w9" onclick="creditwritescript('9')">9</td>
+		<td width="25%"><button class="deletebutton" id="delete1" onclick="CEcredit()">CE</td>
+	</tr>
+	<tr>
+		<td height="6%"><button id="w4" onclick="creditwritescript('4')">4</td>
+		<td><button id="w5" onclick="creditwritescript('5')">5</td>
+		<td><button id="w6" onclick="creditwritescript('6')">6</td>
+		<td><button class="deletebutton" id="delete2" onclick="creditclear()">CLEAR</td>
+	</tr>
+	<tr>
+		<td height="6%"><button id="w1" onclick="creditwritescript('1')">1</td>
+		<td><button id="w2" onclick="creditwritescript('2')">2</td>
+		<td><button id="w3" onclick="creditwritescript('3')">3</td>
+		<td><button class="clearall" onclick="creditclearall()">CLEAR ALL</td>
+	<tr>
+		<td><button id="wd" onclick="dotwritecredit()">,</td>
+		<td height="6%"><button id="w0" onclick="creditwritescript('0')">0</td>
+		<td colspan="2"><button onclick="Creditequally()" class="calc">CALC</td>
+	</tr>
+	<tr height="8%">
+		<td colspan="4">
+
+			<table class="second" border="1">
+				<tr>
+					<td>
+						<iframe frameborder="0" height="100%" width="100%" src="BB.html"></iframe>
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+</body>
+<script>
+firstmemory.value = localStorage.getItem('firstmemory');
+secondmemory.value = localStorage.getItem('secondmemory');
+thirdmemory.value = localStorage.getItem('thirdmemory');
+</script>
+</html>

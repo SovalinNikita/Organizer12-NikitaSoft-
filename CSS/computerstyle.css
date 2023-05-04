@@ -1,0 +1,562 @@
+table.first {
+width: 30%;
+height: 100%;
+margin: auto;
+border: 2px solid #aaaaaa;
+border-radius: 1%;
+}
+table.third {
+width: 30%;
+height: 100%;
+margin: auto;
+border: 2px solid #aaaaaa;
+border-radius: 1%;
+background-color: #d5d5d5;
+}
+tr{
+border: hidden;
+}
+td{
+border: hidden;
+}
+table.second {
+width: 100%;
+height: 100%;
+border: hidden;
+}
+button{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 200%;
+border-radius: 10%;
+border: 1px solid #aaaaaa;
+color: black;
+}
+button.indexbutton{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 130%;
+border-radius: 10%;
+border: 1px solid #aaaaaa;
+}
+input.chbx {
+width: 100%;
+height: 100%;
+border: 0.1em solid black;
+}
+button.blue{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 200%;
+border-radius: 10%;
+border: 1px solid #aaaaaa;
+background-color: #e0e2ff;
+}
+button.pretax{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 200%;
+border-radius: 10%;
+border: 1px solid #aaaaaa;
+background-color: #e0e2ff;
+}
+button:hover {
+background-color: #c8c8c8;
+}
+button.one {
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 95%;
+}
+button.deletebutton {
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.8em;
+background-color: #ff00001f;
+}
+button.clearall {
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.4em;
+background-color: #fce1e1;
+}
+button.menubutton{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+background: #d5f4d9;
+}
+button.calc{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+background: #d5f4d9;
+}
+input.bl{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.7em;
+background: #d5f4d9;
+text-align: left;
+border-radius: 5px;
+border: 1px solid #aaaaaa;
+}
+input.bltwo{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.5em;
+background: white;
+text-align: center;
+border: hidden;
+}
+input.AB{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.7em;
+background: white;
+text-align: center;
+border: hidden;
+}
+input.NSname{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 4em;
+text-align: center;
+border: hidden;
+}
+input.noteinput{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.9em;
+background: white;
+text-align: right;
+border-bottom: 0.05em solid black;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.noteinput2{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.9em;
+background: white;
+text-align: left;
+border: 2px solid #aaaaaa;
+border-radius: 1%;
+}
+input.noteinput2planned{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.9em;
+background: white;
+text-align: left;
+border: 2px solid #aaaaaa;
+border-radius: 1%;
+background: #e0e2ff;
+}
+input.noteinput2real{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.9em;
+background: white;
+text-align: left;
+border: 2px solid #aaaaaa;
+border-radius: 1%;
+background: #fffbc2;
+}
+textarea.noteinput3{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+background: white;
+text-align: left;
+border: 2px solid #aaaaaa;
+border-radius: 1%;
+font-size: 1.7em;
+resize: none;
+}
+input.gr{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.5em;
+border: 0;
+text-align: right;
+outline:none;
+}
+input.percent{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.5em;
+border: 0;
+text-align: left;
+outline:none;
+}
+td.pagetd{
+background: #e6e6e6;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.pagename{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.7em;
+background: #e6e6e6;
+text-align: right;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.grtwo{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.8em;
+border: 0;
+text-align: left;
+outline:none;
+}
+input.constname{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2em;
+border: 0;
+text-align: left;
+outline:none;
+}
+input.constanswer{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2em;
+border: 0;
+text-align: left;
+color: red;
+outline:none;
+}
+input.name{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.1em;
+border: 0;
+text-align: right;
+outline:none;
+}
+input.taskname2{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.6em;
+border: 0;
+text-align: center;
+outline:none;
+}
+input.shopnameone{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.7em;
+text-align: center;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnameone2{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.2em;
+text-align: center;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnameone21{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.2em;
+text-align: center;
+outline:none;
+background: #e6e6e6;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnametwo{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.58em;
+text-align: center;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnamethree{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.7em;
+text-align: center;
+background: #e0e2ff;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnamefour{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.7em;
+text-align: center;
+background: #fffbc2;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopname{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.5em;
+text-align: center;
+border: hidden;
+}
+input.shop_input0103{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.5em;
+text-align: center;
+border-radius: 7%;
+border: 0.05em solid #aaaaaa;
+background: #e0e2ff;
+}
+input.shop_input0203{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.5em;
+text-align: center;
+border-radius: 7%;
+border: 0.05em solid #aaaaaa;
+background: #d5f4d9;
+}
+input.shop_input0303{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.9em;
+background: white;
+text-align: left;
+border: 2px solid #aaaaaa;
+border-radius: 7%;
+}
+input.shopname5{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.5em;
+text-align: right;
+border: hidden;
+}
+select.deposit_select{
+height: 100%;
+font-size: 1.8em;
+}
+input.taskname{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 4em;
+border: 0;
+text-align: right;
+outline:none;
+}
+select.task_select{
+height: 100%;
+width: 100%;
+font-size: 2.3em;
+}
+input.taskname3{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 0.9em;
+border: 0;
+text-align: center;
+outline:none;
+}
+input.taskname4{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 1.45em;
+border: 0;
+text-align: center;
+outline:none;
+}
+input.taskname5{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 0.68em;
+text-align: center;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.taskname6{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.9em;
+background: white;
+text-align: right;
+border: hidden;
+}
+input.taskname7{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.7em;
+font-weight: bold;
+border: 0;
+text-align: right;
+outline:none;
+}
+td.task_td{
+border: 0.15em solid #aaaaaa;
+border-radius: 5%;
+}
+label.sys_radio{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 1.65em;
+font-weight: 700;
+}
+.tabs { width: 100%; height: 100%; padding: 0px; margin: 0 auto; }
+.tabs>input { display: none;}
+.tabs>div {
+    display: none;
+    padding: 12px;
+    border: 1px solid #C0C0C0;
+    background: #FFFFFF;
+    font: bold LUCIDA CONSOLE;
+}
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #C0C0C0;
+    background: #a0a0a0;
+    cursor: pointer;
+    font: bold LUCIDA CONSOLE;
+}
+.tabs>input:checked + label {
+    color: #000000;
+    border: 1px solid #C0C0C0;
+    border-bottom: 1px solid #FFFFFF;
+    background: white;
+    font: bold LUCIDA CONSOLE;
+}
+input[type=radio].sys_radio1{
+width: 5em;
+}
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2{ display: block; }
+
+input.budgetinput{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.7em;
+background: white;
+text-align: right;
+border: hidden;
+}
+
+input[type=range]  {
+      width: 98%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      border-radius: 15px/100%;
+      height: 15px;
+	  border: 1px solid #5d17ad;
+      background-color: #9c9c9c;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      background: #5d17ad;
+      border-radius: 20px/100%;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      -webkit-appearance: none;
+      margin-top: -4px;
+    }
+
+input.alco_text1{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2em;
+border: 0;
+text-align: left;
+outline:none;
+}
+
+input.alco_text2{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2em;
+border: 0;
+text-align: right;
+outline:none;
+}
+

@@ -1,0 +1,652 @@
+<html>
+<script src="taskscode.js"></script>
+<head> 
+<title>NikitaSoft Calculator</title>
+</head>
+<body>
+<table id="maintable" class="first">
+	<tr height="4%">
+		<td class="pagetd" colspan="4" width="100%">
+			
+			<table height="100%" width="100%">
+				<tr height="100%" width="100%">
+
+					<td height="100%" width="23%">
+						<button class="menubutton" onclick="window.location.href = 'index.html';">menu</button>
+					</td>
+
+					<td height="100%" width="33%">
+					</td>
+
+					<td height="100%" width="43%">
+						<input class="pagename" readonly value="tasks">
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%" height="100%">
+				<tr>
+					<td width="12%"><input class="taskname5" value="importance" readonly></td>
+					<td width="12%"><input class="taskname5" value="date" readonly></td>
+					<td width="12%"><input class="taskname5" value="weekday" readonly></td>
+					<td width="12%"><input class="taskname5" value="status" readonly></td>
+					<td width="50%"><input class="taskname5" value="taskname" readonly></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr height="90%" width="100%">
+		<td width="100%">
+			<table width="100%" height="100%">
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(1)" src="tw.png" id="importance01" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(1)" width="100%" height="100%" id="date01" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(1)" width="100%" height="100%" id="time01" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(1)" width="100%" height="100%" id="weekday01" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(1)" src="tw.png" id="status01" height="100%" width="100%"></td>
+
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(1)" id="taskname01" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" class="task_td" width="12%"><img onclick="task_change1(2)" src="tw.png" id="importance02" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(2)" width="100%" height="100%" id="date02" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(2)" width="100%" height="100%" id="time02" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(2)" width="100%" height="100%" id="weekday02" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(2)" src="tw.png" id="status02" height="100%" width="100%"></td>
+
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(2)" id="taskname02" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(3)" src="tw.png" id="importance03" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(3)" width="100%" height="100%" id="date03" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(3)" width="100%" height="100%" id="time03" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(3)" width="100%" height="100%" id="weekday03" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(3)" src="tw.png" id="status03" height="100%" width="100%"></td>
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(3)" id="taskname03" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(4)" src="tw.png" id="importance04" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(4)" width="100%" height="100%" id="date04" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(4)" width="100%" height="100%" id="time04" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(4)" width="100%" height="100%" id="weekday04" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(4)" src="tw.png" id="status04" height="100%" width="100%"></td>
+
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(4)" id="taskname04" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(5)" src="tw.png" id="importance05" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(5)" width="100%" height="100%" id="date05" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(5)" width="100%" height="100%" id="time05" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(5)" width="100%" height="100%" id="weekday05" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(5)" src="tw.png" id="status05" height="100%" width="100%"></td>
+
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(5)" id="taskname05" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(6)" src="tw.png" id="importance06" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(6)" width="100%" height="100%" id="date06" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(6)" width="100%" height="100%" id="time06" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(6)" width="100%" height="100%" id="weekday06" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(6)" src="tw.png" id="status06" height="100%" width="100%"></td>
+
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(6)" id="taskname06" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(7)" src="tw.png" id="importance07" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(7)" width="100%" height="100%" id="date07" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(7)" width="100%" height="100%" id="time07" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(7)" width="100%" height="100%" id="weekday07" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img src="tw.png" id="status07" height="100%" width="100%"></td>
+
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(7)" id="taskname07" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(8)" src="tw.png" id="importance08" height="100%" width="100%"></td>
+
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(8)" width="100%" height="100%" id="date08" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(8)" width="100%" height="100%" id="time08" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(8)" width="100%" height="100%" id="weekday08" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img src="tw.png" id="status08" height="100%" width="100%"></td>
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(8)" id="taskname08" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(9)" src="tw.png" id="importance09" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(9)" width="100%" height="100%" id="date09" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(9)" width="100%" height="100%" id="time09" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(9)" width="100%" height="100%" id="weekday09" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(9)" src="tw.png" id="status09" height="100%" width="100%"></td>
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(9)" id="taskname09" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(10)" src="tw.png" id="importance10" height="100%" width="100%"></td>
+
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(10)" width="100%" height="100%" id="date10" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(10)" width="100%" height="100%" id="time10" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(10)" width="100%" height="100%" id="weekday10" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(10)" src="tw.png" id="status10" height="100%" width="100%"></td>
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(10)" id="taskname10" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(11)" src="tw.png" id="importance11" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(11)" width="100%" height="100%" id="date11" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(11)" width="100%" height="100%" id="time11" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(11)" width="100%" height="100%" id="weekday11" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(11)" src="tw.png" id="status11" height="100%" width="100%"></td>
+
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(11)" id="taskname11" readonly></td>
+				</tr>
+				<tr height="5%">
+					<td class="task_td" width="12%"><img onclick="task_change1(12)" src="tw.png" id="importance12" height="100%" width="100%"></td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="25%">
+								<td>
+								</td>
+							</tr>
+
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(12)" width="100%" height="100%" id="date12" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+									<input onclick="task_change1(12)" width="100%" height="100%" id="time12" class="taskname3">
+								</td>
+							</tr>
+							<tr height="25%">
+								<td>
+								
+								</td>
+							</tr>
+
+						</table>
+					</td>
+					<td class="task_td" width="12%">
+						<table width="100%" height="100%">
+							<tr height="33%">
+								<td>
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>
+									<input onclick="task_change1(12)" width="100%" height="100%" id="weekday12" class="taskname4">
+								</td>
+							</tr>
+							<tr height="33%">
+								<td>									
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="task_td" width="12%"><img onclick="task_change1(12)" src="tw.png" id="status12" height="100%" width="100%"></td>
+					<td class="task_td" width="50%"><input class="taskname6" onclick="task_change1(12)" id="taskname12" readonly></td>
+				</tr>
+				<tr height="1%">
+					<td colspan="5">
+						<table class="second" border="1">
+							<tr>
+								<td>
+									<iframe frameborder="0" height="100%" width="100%" src="BB.html"></iframe>
+								</td>
+							</tr>
+						</table>
+
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+<script>
+shop_load();
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

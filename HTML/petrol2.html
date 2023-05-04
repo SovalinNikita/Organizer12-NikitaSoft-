@@ -1,0 +1,123 @@
+<html>
+
+<script src="petrol2.js"></script>
+
+<head> 
+	<title>NikitaSoft Calculator</title>
+</head> 
+<body>
+
+<table id="maintable" class="first">
+	<tr>
+		<td height="7%" colspan="3">
+			<table height="100%" width="100%">
+				<tr>
+					<td width="50%">
+						<input onclick="sichange(0)" name="si" type="radio" style="width:2.25em; height:2.25em;" id="imp" checked>
+						<label class="sys_radio" for="imp">Imperial</label>
+					</td>
+					<td width="50%">
+						<input onclick="sichange(1)" name="si" type="radio" style="width:2.25em; height:2.25em;" id="intr">
+						<label class="sys_radio" for="intr">International</label>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" height="8%">
+			<table height="100%" width="100%">
+				<tr>
+					<td width="20%">
+						<input class="percent" id="mileage" value="Mil" readonly>
+					</td>
+					<td  width="70%">
+						<input onclick="textchange1()" id="p1" value="0" class="noteinput2" >
+					</td>
+					<td width="10%"><button onclick="textchange1()"><img id="pic1" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td>
+						<input class="percent" id="volume" onclick="textchange2()"; value="Gal" readonly>
+					</td>
+					<td>
+						<input onclick="textchange2()" id="p2" value="0" class="noteinput2" >
+					</td>
+					<td width="10%"><button onclick="textchange2()"><img id="pic2" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td>
+						<input class="percent" id="cost" value="Cost" readonly>
+					</td>
+					<td>
+						<input onclick="textchange3()" id="p3" value="0" class="noteinput2" >
+					</td>
+					<td width="10%"><button onclick="textchange3()"><img id="pic3" src="cb 1.png" height="100%" width="100%"></button></td>
+				</tr>
+				<tr>
+					<td>
+						<input class="percent" id="date" value="Date" readonly>
+					</td>
+					<td>
+						<input id="p4" type="date" class="noteinput2" >
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<td colspan="2" height="9%" width="50%">
+			<button border-radius="8%" font-size=95% class="deletebutton" onclick="petrol_CE()">CE
+	</td>
+	<td colspan="2" height="9%" width="50%">
+			<button border-radius="8%" font-size=95% class="deletebutton" onclick="petrol_clear()">C
+	</td>
+
+</tr>
+	<td colspan="4" height="45%">
+		<table height="100%" width="100%">
+			<tr>
+				<td width="33%" height="20%"><button id="w7" onclick="petrol_write('7')">7</td>
+				<td width="33%"><button id="w8" onclick="petrol_write('8')">8</td>
+				<td width="33%"><button id="w9" onclick="petrol_write('9')">9</td>
+			</tr>
+
+			<tr>
+				<td height="20%"><button id="w4" onclick="petrol_write('4')">4</td>
+				<td><button id="w5" onclick="petrol_write('5')">5</td>
+				<td><button id="w6" onclick="petrol_write('6')">6</td>
+			</tr>
+
+			<tr>
+				<td height="20%"><button id="w1" onclick="petrol_write('1')">1</td>
+				<td><button id="w2" onclick="petrol_write('2')">2</td>
+				<td><button id="w3" onclick="petrol_write('3')">3</td>
+			</tr>
+
+			<tr>
+				<td height="20%"></td>
+				<td><button id="w0" onclick="petrol_write('0')">0</td>
+				<td><button id="wd" onclick="petrol_dotwrite()">,</td>
+			</tr>
+			<tr>
+				<td height="20%"><button onclick="window.location.href = 'petrol.html';" border-radius="8%" font-size=95% class="deletebutton">CANCEL</button></td>
+				<td></td>
+				<td height="20%"><button border-radius="8%" onclick="save()" font-size=95% class="calc">OK</button></td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+
+</body>
+
+<script>
+load();
+if (localStorage.getItem('si') == 1){
+	imp.checked = false;
+	intr.checked = true;
+	}
+document.getElementById('p1').style.backgroundColor='#fffbc2';
+pic1.src = 'cb 2.png';
+</script>
+
+</html>

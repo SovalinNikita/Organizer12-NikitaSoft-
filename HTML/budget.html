@@ -1,0 +1,155 @@
+<html>
+
+<script src="budget.js"></script>
+
+<head> 
+	<title>NikitaSoft Calculator</title>
+</head> 
+<body>
+
+<table id="maintable" class="first">
+	<tr height="4%">
+		<td class="pagetd" colspan="4" width="100%">
+			
+			<table height="100%" width="100%">
+				<tr height="100%" width="100%">
+
+					<td height="100%" width="23%">
+						<button class="menubutton" onclick="window.location.href = 'index.html';">menu</button>
+					</td>
+
+					<td height="100%" width="33%">
+					</td>
+
+					<td height="100%" width="43%">
+						<input class="pagename" readonly value="budget">
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+	<tr heigth="11%">
+		<td></td>
+	</tr>
+	<tr heigth="11%">
+		<td></td>
+	</tr>
+
+	<tr height="10%">
+		<td width="50%"><button class="menubutton" onclick="debitcreditswitch(1)" id="debitbutton">DEBIT</button></td>
+		<td width="50%"><button class="menubutton" onclick="debitcreditswitch(2)" id="creditbutton">CREDIT</button></td>
+	</tr>
+
+	<tr height="45%">
+		<td colspan="2">
+			<table width="100%" height="50%">
+				<tr>
+					<td width="30%"><input id="budgettext01" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(1)" id="budgetname01" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext02" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(2)" id="budgetname02" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext03" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(3)" id="budgetname03" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext04" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(4)" id="budgetname04" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext05" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(5)" id="budgetname05" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext06" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(6)" id="budgetname06" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext07" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(7)" id="budgetname07" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext08" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(8)" id="budgetname08" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext09" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(9)" id="budgetname09" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext10" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(10)" id="budgetname10" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext11" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(11)" id="budgetname11" class="noteinput" readonly></td>
+				</tr>
+				<tr>
+					<td width="30%"><input id="budgettext12" class="noteinput2" readonly></td>
+					<td width="70%"><input onclick="budget_change(12)" id="budgetname12" class="noteinput" readonly></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr height="10%">
+		<td colspan="2" height="100%" width="100%">
+			<table height="100%" width="100%">
+				<tr>
+					<td width="35%"><input class="budgetinput" value="Debit:" readonly></td>
+					<td width="65%"><input id="debit" class="percent" value="0" readonly></td>
+				</tr>
+				<tr>
+					<td width="35%"><input class="budgetinput" value="Credit:" readonly></td>
+					<td width="65%"><input id="credit" class="percent" value="0" readonly></td>
+				</tr>
+				<tr>
+					<td width="35%"><input class="budgetinput" value="Profit:" readonly></td>
+					<td width="65%"><input id="profit" class="percent" value="0" readonly></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr height="8%">
+		<td colspan="4">
+
+			<table class="second" border="1">
+				<tr>
+					<td>
+						<iframe frameborder="0" height="100%" width="100%" src="BB.html"></iframe>
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+
+</body>
+<script>
+if (localStorage.getItem('budgetchange') == null){
+document.getElementById('debitbutton').style.backgroundColor = '#85a489';
+localStorage.setItem('budgetchange', 1);
+}
+else if (localStorage.getItem('budgetchange') != null){
+	if (localStorage.getItem('budgetchange') == 1){
+		document.getElementById('debitbutton').style.backgroundColor = '#85a489';
+		localStorage.setItem('budgetchange', 1);
+		}
+	else if (localStorage.getItem('budgetchange') == 2){
+		document.getElementById('creditbutton').style.backgroundColor = '#85a489';
+		localStorage.setItem('budgetchange', 2);
+		}
+
+	}
+</script>
+<script src="budgetcode1.js"></script>
+</html>
+
+
+

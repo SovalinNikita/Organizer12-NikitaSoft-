@@ -1,0 +1,631 @@
+body{
+background-color: white;
+}
+tr{
+border: hidden;
+}
+td{
+border: hidden;
+}
+
+table.first {
+width: 100%;
+height: 100%;
+margin: auto;
+border-collapse: collapse;
+touch-action: none;
+border: hidden;
+}
+table.third {
+width: 100%;
+height: 100%;
+margin: auto;
+border-collapse: collapse;
+touch-action: none;
+border: hidden;
+background-color: #d5d5d5;
+}
+table.second {
+width: 100%;
+height: 100%;
+border-collapse: collapse;
+touch-action: none;
+border: hidden;
+margin: auto;
+}
+input.chbx {
+width: 100%;
+height: 100%;
+}
+button{
+width: 95%;
+height: 95%;
+-webkit-appearance: none;
+-moz-appearance: none;
+font: LUCIDA CONSOLE;
+font-size: 320%;
+font-weight: bold;
+touch-action: none;
+border-radius: 10%;
+border: 1px solid #aaaaaa;
+margin: 1%;
+color: black;
+}
+button.blue{
+width: 95%;
+height: 95%;
+font: LUCIDA CONSOLE;
+font-size: 320%;
+font-weight: bold;
+touch-action: none;
+border-radius: 10%;
+border: 1px solid #aaaaaa;
+margin: auto;
+background-color: #e0e2ff;
+}
+button.pretax{
+width: 99%;
+height: 95%;
+font: LUCIDA CONSOLE;
+font-size: 320%;
+font-weight: bold;
+touch-action: none;
+border-radius: 10%;
+border: 1px solid #aaaaaa;
+margin: auto;
+background-color: #e0e2ff;
+}
+button:hover {
+background-color: #c8c8c8;
+touch-action: none;
+}
+button.one{
+width: 95%;
+height: 97%;
+font: LUCIDA CONSOLE;
+font-size: 170%;
+font-weight: bold;
+touch-action: none;
+margin: auto;
+}
+button.deletebutton{
+width: 95%;
+height: 97%;
+font: LUCIDA CONSOLE;
+font-size: 230%;
+font-weight: bold;
+touch-action: none;
+margin: auto;
+background-color: #ff00001f;
+}
+button.clearall {
+width: 95%;
+height: 97%;
+font: LUCIDA CONSOLE;
+font-size: 230%;
+font-weight: bold;
+touch-action: none;
+margin: auto;
+background-color: #fce1e1;
+}
+button.calc{
+width: 98%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+background: #d5f4d9;
+font-size: 500%;
+margin: auto;
+}
+button.menubutton{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+background: #d5f4d9;
+font-size: 3.6em;
+}
+input.bl{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.6em;
+background: #d5f4d9;
+touch-action: none;
+text-align: left;
+border-radius: 15px;
+border: 1px solid #aaaaaa;
+}
+input.bltwo{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.4em;
+background: white;
+touch-action: none;
+text-align: center;
+border: hidden;
+border-bottom: hidden;
+}
+input.AB{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.4em;
+background: white;
+touch-action: none;
+text-align: center;
+border: hidden;
+border-bottom: hidden;
+}
+input.NSname{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 7em;
+touch-action: none;
+text-align: center;
+border: hidden;
+magrin: 0;
+}
+input.shopname{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 5.5em;
+touch-action: none;
+text-align: center;
+border: hidden;
+}
+input.shopname5{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 5.5em;
+touch-action: none;
+text-align: right;
+border: hidden;
+}
+input.noteinput{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.7em;
+background: white;
+touch-action: none;
+text-align: right;
+border-bottom: 2px solid black;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.noteinput2{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.7em;
+background: white;
+touch-action: none;
+text-align: left;
+border: 5px solid #aaaaaa;
+border-radius: 1%;
+}
+input.noteinput2planned{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.7em;
+background: white;
+touch-action: none;
+text-align: left;
+border: 5px solid #aaaaaa;
+border-radius: 1%;
+background: #e0e2ff;
+}
+input.noteinput2real{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.7em;
+background: white;
+touch-action: none;
+text-align: left;
+border: 5px solid #aaaaaa;
+border-radius: 1%;
+background: #fffbc2;
+}
+textarea.noteinput3{
+height: 100%;
+width: 100%;
+font: bold LUCIDA CONSOLE;
+background: white;
+text-align: left;
+border: 5px solid #aaaaaa;
+border-radius: 1%;
+font-size: 2em;
+resize: none;
+}
+input.gr{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 585%;
+touch-action: none;
+border: 0;
+text-align: right;
+outline:none;
+}
+input.percent{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 585%;
+touch-action: none;
+border: 0;
+text-align: left;
+outline:none;
+}
+input.grtwo{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 300%;
+touch-action: none;
+border: 0;
+text-align: left;
+outline:none;
+}
+input.constanswer{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 300%;
+touch-action: none;
+border: 0;
+text-align: left;
+color: red;
+outline:none;
+}
+input.constname{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 300%;
+touch-action: none;
+border: 0;
+text-align: left;
+outline:none;
+}
+input.name{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-size: 270%;
+touch-action: none;
+border: 0;
+text-align: right;
+outline:none;
+}
+input.taskname2{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-size: 320%;
+touch-action: none;
+border: 0;
+text-align: center;
+outline:none;
+}
+td.pagetd{
+background: #e6e6e6;
+border-bottom: 1.7em solid black;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.pagename{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.8em;
+background: #e6e6e6;
+text-align: center;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+button.two{
+width: 95%;
+height: 97%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 500%;
+touch-action: none;
+border: 1px solid #aaaaaa;
+margin: auto;
+}
+button.equally{
+width: 95%;
+height: 97%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 500%;
+touch-action: none;
+border: 1px solid #aaaaaa;
+margin: auto;
+background: #d5f4d9;
+}
+input.shopnameone{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.8em;
+text-align: center;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnameone2{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.3em;
+text-align: center;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnameone21{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.3em;
+text-align: center;
+outline:none;
+background: #e6e6e6;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnametwo{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.8em;
+text-align: center;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnamethree{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.8em;
+text-align: center;
+background: #e0e2ff;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shopnamefour{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-size: 2.8em;
+text-align: center;
+background: #fffbc2;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.shop_input0103{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 5.5em;
+touch-action: none;
+text-align: center;
+border: 1px solid #aaaaaa;
+border-radius: 7%;
+background: #e0e2ff;
+}
+input.shop_input0203{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 5.5em;
+touch-action: none;
+text-align: center;
+border: 2px solid #aaaaaa;
+border-radius: 7%;
+background: #d5f4d9;
+}
+input.shop_input0303{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.7em;
+background: white;
+touch-action: none;
+text-align: left;
+border: 2px solid #aaaaaa;
+border-radius: 7%;
+}
+select.deposit_select{
+height: 100%;
+font-size: 3.3em;
+appearance: none;
+background: none;
+}
+select.task_select{
+height: 100%;
+width: 100%;
+font-size: 5.2em;
+}
+input.taskname3{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 190%;
+touch-action: none;
+border: 0;
+text-align: center;
+outline:none;
+}
+input.taskname4{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 235%;
+touch-action: none;
+border: 0;
+text-align: center;
+outline:none;
+}
+input.taskname5{
+width: 100%;
+height: 100%;
+font: bold LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 1.33em;
+text-align: center;
+outline:none;
+border-bottom: hidden;
+border-top: hidden;
+border-left: hidden;
+border-right: hidden;
+}
+input.taskname6{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.7em;
+background: white;
+touch-action: none;
+text-align: right;
+border: hidden;
+}
+input.taskname7{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-size: 320%;
+touch-action: none;
+font-weight: bold;
+border: 0;
+text-align: right;
+outline:none;
+}
+td.task_td{
+border: 0.15em solid #aaaaaa;
+border-radius: 5%;
+}
+textarea.noteinput3::-webkit-scrollbar {
+width: 3em;
+background-color: white;
+}
+textarea.noteinput3::-webkit-scrollbar-thumb {
+    background-color: #c6c6c6;
+}
+label.sys_radio{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.55em;
+font-weight: 700;
+touch-action: none;
+}
+
+input.budgetinput{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 3.4em;
+background: white;
+touch-action: none;
+text-align: right;
+border: hidden;
+border-bottom: hidden;
+}
+
+input[type=range]  {
+      width: 98%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+      border-radius: 45px/100%;
+      height: 45px;
+	  border: 1px solid #5d17ad;
+      background-color: #9c9c9c;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      background: #5d17ad;
+      border-radius: 60px/100%;
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      -webkit-appearance: none;
+      margin-top: -8px;
+    }
+
+input.alco_text1{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 400%;
+touch-action: none;
+border: 0;
+text-align: left;
+outline:none;
+}
+
+input.alco_text2{
+width: 100%;
+height: 100%;
+font: LUCIDA CONSOLE;
+font-weight: bold;
+font-size: 400%;
+touch-action: none;
+border: 0;
+text-align: right;
+outline:none;
+}
+

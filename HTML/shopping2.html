@@ -1,0 +1,299 @@
+<html>
+<script src="shopcode.js"></script>
+<head> 
+<title>NikitaSoft Calculator</title>
+</head>
+<body>
+<table id="maintable" class="first" background-color="#d5d5d5">
+	<tr width="100%">
+		<td width="100%">
+
+			<table width="100%" height="100%">
+
+				<tr height="8%">
+					<td colspan="2"><input class="noteinput2" id="shopname"></td>
+				</tr>
+
+				<tr heigth="3%">
+					<td></td>
+				</tr>
+
+				<tr height="41%">
+					<td><textarea class="noteinput3" id="shoptext"></textarea></td>
+				</tr>
+
+				<tr height="41%">
+					<td>
+						<table height="100%" width="100%">
+
+							<tr>
+								<td height="33%" width="40%">
+
+									<table height="100%" width="100%">
+										<tr>
+											<td colspan="2" height="50%" width="100%">
+												<input class="shopnameone" value="planned amount" readonly>
+											</td>
+										</tr>
+
+										<tr>
+											<td height="50%" width="50%">
+												<input onclick="shop_changesecond(1)" class="noteinput2" id="pm" readonly>
+											</td>
+
+										</tr>
+
+									</table>
+
+								</td>
+
+								<td height="33%" width="20%">
+
+									<table height="100%" width="100%">
+
+										<tr>
+											<td colspan="2" height="50%" width="100%">
+												
+											</td>
+										</tr>
+
+										<tr>
+											<td height="40%" width="12%">
+												<button	onclick="shop_switch1()"><img src="cb 5.png" height="100%" width="100%"></button>
+											</td>
+
+										</tr>
+
+									</table>
+
+								</td>
+
+								<td height="33%" width="40%">
+
+									<table height="100%" width="100%">
+										<tr>
+											<td colspan="2" height="50%" width="100%">
+												<input class="shopnameone" value="real amount" readonly>
+											</td>
+										</tr>
+
+										<tr>
+
+											<td height="50%" width="50%">
+												<input onclick="shop_changesecond(2)" class="noteinput2" id="rm" readonly>
+											</td>
+
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+							<tr>
+								<td height="33%" width="40%">
+
+									<table height="100%" width="100%">
+										<tr>
+											<td colspan="2" height="50%" width="100%">
+												<input class="shopnameone" value="planned price" readonly>
+											</td>
+										</tr>
+
+										<tr>
+											<td height="50%" width="50%">
+												<input onclick="shop_changesecond(3)" class="noteinput2" id="ppr" readonly>
+											</td>
+
+										</tr>
+
+									</table>
+
+								</td>
+
+								<td height="33%" width="20%">
+
+									<table height="100%" width="100%">
+
+										<tr>
+											<td colspan="2" height="50%" width="100%">
+												
+											</td>
+										</tr>
+
+										<tr>
+											<td height="40%" width="12%">
+												<button	onclick="shop_switch2()"><img src="cb 5.png" height="100%" width="100%"></button>
+											</td>
+
+										</tr>
+
+									</table>
+
+								</td>
+
+								<td height="33%" width="40%">
+
+									<table height="100%" width="100%">
+										<tr>
+											<td colspan="2" height="50%" width="100%">
+												<input class="shopnameone" value="real price" readonly>
+											</td>
+										</tr>
+
+										<tr>
+
+											<td height="50%" width="50%">
+												<input onclick="shop_changesecond(4)" class="noteinput2" id="rpr" readonly>
+											</td>
+											
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+							<tr>
+								<td height="33%" width="40%">
+
+									<table height="100%" width="100%">
+										<tr>
+											<td height="50%" width="100%">
+												<input class="shopnameone" value="planned sum" readonly>
+											</td>
+										</tr>
+
+										<tr>
+											
+											<td height="50%" width="100%">
+												<input class="noteinput2planned" id="planned" readonly>
+											</td>
+
+										</tr>
+
+									</table>
+
+								</td>
+
+								<td height="33%" width="20%">
+
+									<table height="100%" width="100%">
+
+										<tr>
+											<td colspan="2" height="50%" width="100%">
+												
+											</td>
+										</tr>
+
+										<tr>
+											<td height="40%" width="100%">
+												<input class="shopnameone" value="bought" readonly>
+											</td>
+
+										</tr>
+
+									</table>
+
+								</td>
+
+								<td height="33%" width="40%">
+
+									<table height="100%" width="100%">
+										<tr>
+											<td height="50%" width="100%">
+												<input class="shopnameone" value="real sum" readonly>
+											</td>
+										</tr>
+
+										<tr>
+											
+											<td height="50%" width="100%">
+												<input class="noteinput2real" id="real" readonly>
+											</td>
+
+										</tr>
+
+									</table>
+
+								</td>
+							</tr>
+
+						</table>
+					</td>
+				</tr>
+
+				<tr height="8%">
+					<td height="100%" width="100%">
+
+						<table height="100%" width="100%">
+							<tr height="100%">
+								<td height="100%" width="35%"><button onclick="shop_clearall2()" class="clearall">CLEAR ALL</button></td>
+								<td height="100%" width="5%"></td>
+								<td height="100%" width="20%"><input width="100%" height="100%" type="checkbox" onchange="chbxsave()" class="chbx" id="shopchbx"></td>
+								<td height="100%" width="5%"></td>
+								<td height="100%" width="35%"><button class="calc" background-color="#d5d5d5" onclick="shop_save()">OK</button></td>
+							</tr>
+						</table>
+
+					</td>
+				</tr>
+
+			</table>
+
+		</td>
+	</tr>
+
+	<tr height="8%">
+		<td colspan="4">
+
+			<table class="second" border="1">
+				<tr>
+					<td>
+						<iframe frameborder="0" height="100%" width="100%" src="BB.html"></iframe>
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+
+</table>
+
+<script>
+var tnn = localStorage.getItem('shopswitch');
+console.log(tnn);
+shopname.value = localStorage.getItem('shoploc08');
+shoptext.value = localStorage.getItem('shoploc09');
+pm.value = localStorage.getItem('shoploc01');
+rm.value = localStorage.getItem('shoploc02');
+ppr.value = localStorage.getItem('shoploc03');
+rpr.value = localStorage.getItem('shoploc04');
+var cbp = localStorage.getItem('shoploc07');
+
+if (cbp == 1)
+	{
+	document.getElementById('shopchbx').checked = true;
+	}
+if (cbp == 0)
+	{
+	document.getElementById('shopchbx').checked = false;
+	}
+
+var shop1 = localStorage.getItem('shoploc01');
+var shop2 = localStorage.getItem('shoploc03');
+
+var shop3 = localStorage.getItem('shoploc02');
+var shop4 = localStorage.getItem('shoploc04');
+
+planned.value = shop1 * shop2;
+real.value = shop3 * shop4;
+localStorage.setItem('shoploc05', planned.value);
+localStorage.setItem('shoploc06', real.value);
+</script>
+
+</body>
+</html>
+
+
+

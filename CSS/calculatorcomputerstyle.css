@@ -1,0 +1,135 @@
+div {  /* same options for all divs */
+ font: bold LUCIDA CONSOLE;
+ border: hidden;
+ background: white;
+ width: 100%;
+ height: 100%;
+ color: black;
+}
+div.main {
+width: 30%;
+margin: auto;
+border: 3px solid #aaaaaa;
+border-radius: 1%;
+}
+div.space {
+  height: 1%;
+}
+div.menu {
+display: grid;
+grid-template-columns: 23% 33% 43%;
+grid-template-rows: 100%;
+font-size: 1.7em;
+height: 5%;
+background: #e6e6e6;
+text-align: right;
+}
+div.inputs {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 33% 33% 33%;
+  font-size: 170%;
+  height: 18%;
+  text-align: right;
+}
+div.memory {
+  display: grid;
+  grid-template-columns: 17% 58% 25%;
+  grid-template-rows: 33% 33% 33%;
+  height: 14%;
+}
+div.memorybuttons {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-row: span 3;
+}
+div.keyboard {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  height: 40%;
+}
+div.name {
+ height: 23%;
+}
+div.sciencebutton{
+font-size: 100%;
+border-radius: 10%;
+grid-row: span 2;
+}
+.menu * {
+background: #e6e6e6;
+text-align: center;
+font-size: 50px;
+font-family: sans-serif;
+}
+
+/* button styles */
+button { /* same options for all buttons */
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  border: 1px solid #aaaaaa;
+  font: bold LUCIDA CONSOLE;
+  font-size: clamp(50%, 200%, 350%);
+  color: black;
+}
+button:hover {
+background-color: #c8c8c8;
+}
+button.menu {
+background: #d5f4d9;
+font-size: 60%;
+color: black;
+}
+button.clearbutton {
+font-size: 0.8em;
+background-color: #ff00001f;
+}
+button.calcbutton {
+background-color: #e0e2ff;
+}
+button.resultbutton {
+background-color: #d5f4d9;
+}
+button.memorybutton {
+background-color: white;
+}
+
+/* input styles */
+input { /* same option for all inputs */
+  font: bold LUCIDA CONSOLE;
+  width: 100%;
+  height: 100%;
+  font-size: max(1em, min(2em, calc(100vw * 4 / 75)));
+}
+input.menutext{
+font-size: 50%;
+text-align: right;
+border: hidden;
+}
+input.main{
+border: 0;
+resize: horizontal;
+text-align: right;
+outline:none;
+}
+input.memorytext{
+font-size: 1.5em;
+background: white;
+text-align: center;
+border: hidden;
+}
+input.memoryinput{
+background: #d5f4d9;
+text-align: left;
+border-radius: 5px;
+border: 1px solid #aaaaaa;
+}
+input.NSname{
+font: bold LUCIDA CONSOLE;
+font-size: 4em;
+text-align: center;
+border: hidden;
+}

@@ -1,0 +1,55 @@
+/* div styles */
+div {  /* same options for all divs */
+ font: bold LUCIDA CONSOLE;
+ border: hidden;
+ background: white;
+ width: 100%;
+ height: 100%;
+ color: black;
+}
+div.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.main {
+margin: auto;
+}
+div.top {
+ height: 7%;
+}
+div.modes {
+display: grid;
+grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+grid-template-columns: 50% 50%;
+height: 73%;
+font-size: 1.7em;
+text-align: right;
+}
+div.name {
+ height: 20%;
+}
+
+/* button styles */
+button { /* same options for all buttons */
+  width: 95%;
+  height: 95%;
+  border-radius: 10%;
+  border: 1px solid #aaaaaa;
+  font: bold LUCIDA CONSOLE;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 1.8em;
+  color: black;
+  margin: 0 auto;
+}
+
+/* input styles */
+input.NSname{
+  height: 100%;
+  width: 100%;
+  font-size: 4.5em;
+  font: bold LUCIDA CONSOLE;
+  text-align: center;
+  border: hidden;
+}

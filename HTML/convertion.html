@@ -1,0 +1,203 @@
+<html>
+
+<script src="convertion.js"></script>
+
+<head> 
+	<title>NikitaSoft Calculator</title>
+</head> 
+<body>
+
+<table id="maintable" class="first">
+	<tr height="4%">
+		<td class="pagetd" colspan="4" width="100%">
+			
+			<table height="100%" width="100%">
+				<tr height="100%" width="100%">
+
+					<td height="100%" width="23%">
+						<button class="menubutton" onclick="window.location.href = 'index.html';">menu</button>
+					</td>
+
+					<td height="100%" width="33%">
+					</td>
+
+					<td height="100%" width="43%">
+						<input class="pagename" readonly value="convertion">
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="4">
+			<select class="task_select" onchange="change(this.value); selopt();" id="type">
+				<option value="0">Length</option> 
+				<option value="1">Speed</option> 
+				<option value="2">Weight</option> 
+				<option value="3">Area</option> 
+				<option value="4">Volume</option> 
+				<option value="5">Temperature</option>
+				<option value="6">Power</option>  
+				<option value="7">Fuel consumption</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4">
+			<table width="100%" height="100%">
+				<tr>
+					<td width="46%">
+						<input class="noteinput2" readonly value="0" onclick="inputchange1()" id="kn1">
+					</td>
+
+					<td>
+						<input class="bltwo" readonly value="=">
+					</td>
+
+					<td width="46%">
+						<input class="noteinput2" readonly value="0" onclick="inputchange2()" id="kn2">
+					</td>
+
+				</tr>
+				<tr>
+					<td width="46%">
+						<select class="task_select" id="k1" onchange="kof1(this.value); res();"></select>
+
+					</td>
+
+					<td>
+					</td>
+
+					<td width="46%">
+						<select class="task_select" id="k2" onchange="kof2(this.value); res();"></select>
+					</td>
+
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+
+
+<tr height="1%">
+<td colspan="3" width="70%">
+<table class="second">
+<tr height="100%">
+<td width="15%"><input class="bltwo" value="M1" readonly></td>
+<td width="85%"><input class="bl" id="firstmemory" readonly></td>
+</tr>
+</table>
+</td>
+<td width="30%">
+<table class="second" border="1">
+<tr>
+<td><button><img src="mb1.png" height="100%" width="100%" onclick="onefirstmemorybutton()"></button></td>
+<td><button id="m1"><img src="mb2.png" height="100%" width="100%" onclick="twofirstmemorybutton()"></button></td>
+<td><button><img src="mb3.png" height="100%" width="100%" onclick="threefirstmemorybutton()"></button></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr height="1%">
+<td colspan="3" width="80%">
+<table class="second">
+<tr height="100%">
+<td width="15%"><input class="bltwo" value="M2" readonly></td>
+<td width="85%"><input class="bl" id="secondmemory" readonly></td>
+</tr>
+</table>
+</td>
+<td>
+<table class="second" border="1">
+<tr>
+<td><button><img src="mb1.png" height="100%" width="100%" onclick="onesecondmemorybutton()"></button></td>
+<td><button id="m2"><img src="mb2.png" height="100%" width="100%" onclick="twosecondmemorybutton()"></button></td>
+<td><button><img src="mb3.png" height="100%" width="100%" onclick="threesecondmemorybutton()"></button></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr height="1%">
+<td colspan="3" width="80%">
+<table class="second">
+<tr height="100%">
+<td width="15%"><input class="bltwo" value="M3" readonly></td>
+<td width="85%"><input class="bl" id="thirdmemory" readonly></td>
+</tr>
+</table>
+</td>
+<td>
+<table class="second" border="1">
+<tr>
+<td><button><img src="mb1.png" height="100%" width="100%" onclick="onethirdmemorybutton()"></button></td>
+<td><button id="m3"><img src="mb2.png" height="100%" width="100%" onclick="twothirdmemorybutton()"></button></td>
+<td><button><img src="mb3.png" height="100%" width="100%" onclick="threethirdmemorybutton()"></button></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<tr>
+	<td colspan="2" height="8%" width="50%">
+			<button id="delete1" border-radius="8%" font-size=95% class="deletebutton" onclick="CE(); res();">CE
+	</td>
+	<td colspan="2" height="8%" width="50%">
+			<button id="delete2" border-radius="8%" font-size=95% class="deletebutton" onclick="clearfunc(); res();">C
+	</td>
+</tr>
+	<td colspan="4" height="38%">
+		<table height="100%" width="100%">
+			<tr>
+				<td width="33%" height="25%"><button id="w7" onclick="writescript('7'); res();">7</td>
+				<td width="33%"><button id="w8" onclick="writescript('8'); res();">8</td>
+				<td width="33%"><button id="w9" onclick="writescript('9'); res();">9</td>
+			</tr>
+
+			<tr>
+				<td height="25%"><button id="w4" onclick="writescript('4'); res();">4</td>
+				<td><button id="w5" onclick="writescript('5'); res();">5</td>
+				<td><button id="w6" onclick="writescript('6'); res();">6</td>
+			</tr>
+
+			<tr>
+				<td height="25%"><button id="w1" onclick="writescript('1'); res();">1</td>
+				<td><button id="w2" onclick="writescript('2'); res();">2</td>
+				<td><button id="w3" onclick="writescript('3'); res();">3</td>
+			</tr>
+
+			<tr>
+				<td height="25%"><button id="wmp" onclick="plusminusswitch(); res();">+/-</td>
+				<td><button id="w0" onclick="writescript('0'); res();">0</td>
+				<td><button id="wd" onclick="dotwrite()">,</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+	<tr height="8%">
+		<td colspan="4">
+
+			<table class="second" border="1">
+				<tr>
+					<td>
+						<iframe frameborder="0" height="100%" width="100%" src="BB.html"></iframe>
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+
+</body>
+
+<script>
+wmp.style.visibility='hidden'; 
+selopt();
+
+</script>
+
+</html>

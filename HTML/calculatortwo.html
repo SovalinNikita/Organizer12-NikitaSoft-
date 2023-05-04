@@ -1,0 +1,199 @@
+<html>
+
+<script src="calccode.js"></script>
+
+<head> 
+	<title>NikitaSoft Calculator</title>
+</head>
+
+<body>
+
+<table id="maintable" class="first">
+	<tr height="4%">
+		<td class="pagetd" colspan="4" width="100%">
+			
+			<table height="100%" width="100%">
+				<tr height="100%" width="100%">
+
+					<td height="100%" width="23%">
+						<button class="menubutton" onclick="window.location.href = 'index.html';">menu</button>
+					</td>
+
+					<td height="100%" width="43%">
+						<input class="pagename" readonly value="calculator">
+					</td>
+
+					<td height="100%" width="33%">
+					</td>
+
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="3" height="18%">
+
+			<table class="second" border="1">
+				<tr>
+					<td><input class="gr" id="first" readonly value="0"></td>
+				</tr>
+
+				<tr>
+					<td><input class="gr" id="second" readonly></input></td>
+				</tr>
+
+				<tr>
+					<td><input class="gr" id="third" value="0" readonly></td>
+				</tr>
+			</table>
+
+		</td>
+		<td width="35%">
+
+			<table class="second" border="1">
+				<tr>
+					<td height="50%" width="50%"><button border-radius="8%" class="one" onclick="clearfunc()">CLEAR</td>
+				</tr>
+
+				<tr>
+					<td height="50%" width="50%"><button class="one" onclick="clearallfunc()">CLEAR ALL</td>
+				</tr>
+
+			</table>
+
+		</td>
+	</tr>
+
+	<tr>
+		<td height="6%" colspan="3" width="65%">
+
+			<table class="second">
+				<tr height="100%">
+					<td width="15%"><input class="bltwo" value="M1" readonly></td>
+					<td width="85%"><input class="bl" id="firstmemory" value="0" readonly></td>
+				</tr>
+			</table>
+
+		</td>
+		<td width="35%">
+
+			<table class="second" border="1">
+				<tr>
+					<td><button><img src="mb1.png" height="100%" width="100%" onclick="onefirstmemorybutton()"></button></td>
+					<td><button><img src="mb2.png" height="100%" width="100%" onclick="twofirstmemorybutton()"></button></td>
+					<td><button><img src="mb3.png" height="100%" width="100%" onclick="threefirstmemorybutton()"></button></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+
+	<tr>
+		<td height="6%" colspan="3" width="80%">
+
+			<table class="second">
+				<tr height="100%">
+					<td width="15%"><input class="bltwo" value="M2" readonly></td>
+					<td width="85%"><input class="bl" id="secondmemory" value="0" readonly></td>
+				</tr>
+			</table>
+
+		</td>
+		<td>
+
+			<table class="second" border="1">
+				<tr>
+					<td><button><img src="mb1.png" height="100%" width="100%" onclick="onesecondmemorybutton()"></button></td>
+					<td><button><img src="mb2.png" height="100%" width="100%" onclick="twosecondmemorybutton()"></button></td>
+					<td><button><img src="mb3.png" height="100%" width="100%" onclick="threesecondmemorybutton()"></button></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+
+	<tr>
+		<td height="6%" colspan="3" width="80%">
+
+			<table class="second">
+				<tr height="100%">
+					<td width="15%"><input class="bltwo" value="M3" readonly></td>
+					<td width="85%"><input class="bl" id="thirdmemory" value="0" readonly></td>
+				</tr>
+			</table>
+
+		</td>
+		<td>
+
+			<table class="second" border="1">
+				<tr>
+					<td><button><img src="mb1.png" height="100%" width="100%" onclick="onethirdmemorybutton()"></button></td>
+					<td><button><img src="mb2.png" height="100%" width="100%" onclick="twothirdmemorybutton()"></button></td>
+					<td><button><img src="mb3.png" height="100%" width="100%" onclick="threethirdmemorybutton()"></button></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+
+	<tr>
+		<td height="8%" width="25%"><button onclick="CE()">CE</td>
+		<td width="25%"><button onclick="writesymbolsscript('/')">/</td>
+		<td width="25%"><button onclick="writesymbolsscript('X')">X</td>
+		<td width="35%"><button class="two" onclick="writesymbolsscript('-')">-</td>
+	</tr>
+
+	<tr>
+		<td height="8%"><button onclick="writescript('7')">7</td>
+		<td><button onclick="writescript('8')">8</td>
+		<td><button onclick="writescript('9')">9</td>
+		<td rowspan="2"><button class="two" onclick="writesymbolsscript('+')">+</td>
+	</tr>
+
+	<tr>
+		<td height="8%"><button onclick="writescript('4')">4</td>
+		<td><button onclick="writescript('5')">5</td>
+		<td><button onclick="writescript('6')">6</td>
+	</tr>
+
+	<tr>
+		<td height="8%"><button onclick="writescript('1')">1</td>
+		<td><button onclick="writescript('2')">2</td>
+		<td><button onclick="writescript('3')">3</td>
+		<td rowspan="2"><button class="calc" onclick="equallity()">=</td>
+	</tr>
+
+	<tr>
+		<td height="8%"><button onclick="plusminusswitch()">+/-</td>
+		<td><button onclick="writescript('0')">0</td>
+		<td><button onclick="dotwrite()">,</td>
+	</tr>
+
+	<tr height="8%">
+		<td colspan="4">
+
+			<table class="second" border="1">
+				<tr>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="4">
+		</td>
+	</tr>
+</table>
+
+</body>
+
+<script>
+	firstmemory.value = localStorage.getItem('firstmemory');
+	secondmemory.value = localStorage.getItem('secondmemory');
+	thirdmemory.value = localStorage.getItem('thirdmemory');
+</script>
+
+</html>

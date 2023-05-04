@@ -1,0 +1,145 @@
+<html>
+
+<script src="petrol.js"></script>
+
+<head> 
+	<title>NikitaSoft Calculator</title>
+</head> 
+<body>
+
+<table id="maintable" class="first">
+	<tr height="4%">
+		<td class="pagetd" colspan="4" width="100%">
+			
+			<table height="100%" width="100%">
+				<tr height="100%" width="100%">
+
+					<td height="100%" width="23%">
+						<button class="menubutton" onclick="window.location.href = 'index.html';">menu</button>
+					</td>
+
+					<td height="100%" width="33%">
+					</td>
+
+					<td height="100%" width="43%">
+						<input class="pagename" readonly value="petrol">
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+	<tr>
+		<td width="33%" height="8%"><button onclick="change(0)">CAR №1</td>
+		<td width="33%" height="8%"><button onclick="change(1)">CAR №2</td>
+		<td width="33%" height="8%"><button onclick="change(2)">CAR №3</td>
+	</tr>
+	<tr>
+		<td height="7%" colspan="3">
+			<table height="100%" width="100%">
+				<tr>
+					<td width="50%">
+						<input onclick="sichange(0)" name="si" type="radio" id="imp" checked>
+						<label class="sys_radio" for="imp">Imperial</label>
+					</td>
+					<td width="50%">
+						<input onclick="sichange(1)" name="si" type="radio" id="intr">
+						<label class="sys_radio" for="intr">International</label>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" height="8%">
+			<table>
+				<tr>
+					<td width="50%">
+						<select class="task_select" onchange="datechange(this.value); dtchange(0);">
+							<option value="30">Last 30 days</option>
+							<option value="all">All time</option>
+							<option value="7">Last 7 days</option>
+						</select>
+					</td>
+					<td  width="50%">
+						<input class="percent" id="mileage" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="percent" value="First Date" readonly>
+					</td>
+					<td  width="50%">
+						<input class="percent" id="summary" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="date" onchange="dtchange(1)" id="date1" class="noteinput2" >
+					</td>
+					<td  width="50%">
+						<input class="percent" id="volume" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class="percent" value="Last Date" readonly>
+					</td>
+					<td  width="50%">
+						<input class="percent" id="intcons" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="date" onchange="dtchange(1)" id="date2" class="noteinput2">
+					</td>
+					<td  width="50%">
+						<input class="percent" id="impcons" readonly>
+					</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<textarea class="noteinput3" id="text"></textarea>
+		</td>
+	</tr>
+
+	<tr>
+		<td width="33%" height="11%"><button onclick="window.location.href = 'petrol2.html';">ADD</td>
+		<td width="33%"><button onclick="changelast()">CHANGE LAST</td>
+		<td width="33%"><button onclick="clearlast()">CLEAR LAST</td>
+	</tr>
+
+	<tr height="8%">
+		<td colspan="4">
+
+			<table class="second" border="1">
+				<tr>
+					<td>
+						<iframe frameborder="0" height="100%" width="100%" src="BB.html"></iframe>
+					</td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+</table>
+
+</body>
+
+<script>
+selgas();
+let date = new Date();
+date.setDate(date.getDate()-30);
+document.getElementById('date1').valueAsDate = new Date(date);
+document.getElementById('date2').valueAsDate = new Date();
+if (si == 1){
+	imp.checked = false;
+	intr.checked = true;
+	}
+</script>
+
+</html>
